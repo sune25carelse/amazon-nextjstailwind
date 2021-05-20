@@ -1,4 +1,9 @@
 import Image from "next/image";
+import {
+  MenuIcon,
+  SearchIcon,
+  ShoppingCartIcon,
+} from "@heroicons/react/outline";
 
 function Header() {
   return (
@@ -16,8 +21,9 @@ function Header() {
         </div>
 
         {/* Search */}
-        <div>
+        <div className="hidden bg-yellow-400 hover:bg-yellow-500">
           <input type="text" />
+          <SearchIcon className="h-12 p-4" />
         </div>
       </div>
 
