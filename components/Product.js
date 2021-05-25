@@ -10,6 +10,8 @@ function Product({ id, title, price, description, category, image }) {
     Math.floor(Math.random() * (MAX_RATING - MIN_RATING)) * MIN_RATING
   );
 
+  const [hasPrime] = useState(Math.random() < 0.5)
+
   return (
     <div>
       <p>{category}</p>
@@ -25,6 +27,10 @@ function Product({ id, title, price, description, category, image }) {
             <StarIcon className="h-5" />
           ))}
       </div>
+            <p>{description}</p>
+            <div>
+                
+            </div>
     </div>
   );
 }
