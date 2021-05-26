@@ -4,6 +4,7 @@ import {
   SearchIcon,
   ShoppingCartIcon,
 } from "@heroicons/react/outline";
+import { signIn, signOut, useSessions } from "next-auth/client";
 
 function Header() {
   return (
@@ -29,7 +30,10 @@ function Header() {
           <SearchIcon className="h-12 p-4" />
         </div>
         {/* rightside */}
-        <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap ">
+        <div
+          onClick={signIn}
+          className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap "
+        >
           <div className="link">
             <p>Hello Luca Van Wyk</p>
             <p className="font-extra-bold md:text-sm">Account & lists</p>
