@@ -33,7 +33,10 @@ function Header() {
         </div>
         {/* rightside */}
         <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
-          <div onClick={signIn} className="cursor-pointer link">
+          <div
+            onClick={!session ? signIn : signOut}
+            className="cursor-pointer link"
+          >
             <p className="hover:underline">
               {session ? `Hello, ${session.user.name}` : "Sign In"}
             </p>
