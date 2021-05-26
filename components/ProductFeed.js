@@ -1,4 +1,5 @@
 import Product from "./Product";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 function ProductFeed({ products }) {
   return (
@@ -19,7 +20,7 @@ function ProductFeed({ products }) {
 
       <img
         className="md:col-span-full"
-        src="https://links.papareact.com/dy2"
+        src="https://links.papareact.com/dyz"
         alt=""
       />
 
