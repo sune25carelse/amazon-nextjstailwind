@@ -3,7 +3,7 @@ import { useState } from "react";
 import { StarIcon } from "@heroicons/react/solid";
 import Currency from "react-currency-formatter";
 import { useDispatch } from "react-redux";
-import { addToBasket } from "../src/slices/basketSlice";
+import { addToBasket, removeFromBasket } from "../src/slices/basketSlice";
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
@@ -25,6 +25,8 @@ function Product({ id, title, price, description, category, image }) {
       description,
       category,
       image,
+      hasPrime,
+      rating,
     };
 
     // Sending ythe product as an action in the Redux store... the basket value
