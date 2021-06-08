@@ -29,7 +29,7 @@ function Product({ id, title, price, description, category, image }) {
       rating,
     };
 
-    // Sending ythe product as an action in the Redux store... the basket value
+    // Sending the product as an action in the Redux store... the basket value
     dispatch(addToBasket(product));
   };
 
