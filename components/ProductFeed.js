@@ -1,5 +1,5 @@
 import Product from "./Product";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function ProductFeed({ products }) {
   return (
@@ -24,7 +24,7 @@ function ProductFeed({ products }) {
         alt=""
       />
 
-      <div className="md:col-span-2">
+      <div className="md:col-span-2 xl:col-span-2">
         {products
           .slice(4, 5)
           .map(({ id, title, price, description, category, image }) => (
