@@ -16,7 +16,7 @@ function checkout() {
       <Header />
 
       <main className="lg:flex max-w-screen-2xl mx-auto">
-        {/* left */}
+        {/* Left */}
         <div className="flex-grow m-5 shadow-sm">
           <Image
             src="https://links.papareact.com/ikj"
@@ -28,7 +28,7 @@ function checkout() {
           <div className="flex flex-col p-5 space-y-10 bg-white">
             <h1 className="text-3xl border-b pb-4">
               {items.length === 0
-                ? "Your Amazon Basket is empty"
+                ? "Your Amazon Basket is empty."
                 : "Shopping Basket"}
             </h1>
 
@@ -49,11 +49,11 @@ function checkout() {
         </div>
 
         {/* Right */}
-        <div className="flex flex-col bg-white p-10 shadow-md">
+        <div className="flex flex-col bg-white shadow-sm p-10">
           {items.length > 0 && (
             <>
               <h2 className="whitespace-nowrap">
-                Subtotal ({items.length} items):{""}
+                Subtotal ({items.length} items):{" "}
                 <span className="font-bold">
                   <Currency quantity={total} currency="ZAR" />
                 </span>
@@ -66,7 +66,7 @@ function checkout() {
                   "from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed"
                 }`}
               >
-                {!session ? "Sign in to checkout" : "Proceed to checkout"}
+                {!session ? "Sign In to Checkout" : "Proceed to Checkout"}
               </button>
             </>
           )}
