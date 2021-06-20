@@ -6,6 +6,7 @@ import { selectItems, selectTotal } from "../slices/basketSlice";
 import Currency from "react-currency-formatter";
 import { useSession } from "next-auth/client";
 import { loadStripe } from "@stripe/stripe-js";
+import axios from "axios";
 const stripePromise = loadStripe(process.env.stripe_public_key);
 
 function checkout() {
